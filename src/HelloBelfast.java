@@ -1,6 +1,6 @@
-public class HelloBelfast {
+public class HelloPortsmouth {
    public static void main(String[] args) {
-      // Prints "Hello, Belfast!" in the terminal window.
-      System.out.println("Hello, Belfast!");
+      // Prints "Hello, Portsmouth!" in the terminal window.
+      System.out.println("Hello, Portsmouth!");
    }
 }

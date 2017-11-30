@@ -8,7 +8,7 @@ Go to [Play with Docker](https://www.play-with-docker.com). Add 2 New Instances.
 
 Run these commands in your first instance:
 ```
-git clone https://github.com/dockerbelfast/build-example.git
+git clone https://github.com/popuplabus/build-example.git
 cd build-example
 ls
 
@@ -25,25 +25,25 @@ Dockerfile should have the following text:
 
   WORKDIR /usr/src/myapp
 
-  RUN javac HelloBelfast.java
+  RUN javac HelloPortsmouth.java
 
-  CMD ["java", "HelloBelfast"]
+  CMD ["java", "HelloPortsmouth"]
 
 
 * Step 1 - Build:
 ```
-docker build -t hello-belfast-image .
+docker build -t hello-portsmouth-image .
 ```
 * Step 2 - Ship:
 ```
-docker login -u belfast -p <password>
-docker tag hello-belfast-image belfast/hello-belfast-image:<your own initials>
+docker login -u popuplabus -p <password>
+docker tag hello-portsmouth-image popuplabus/hello-portsmouth-image:<your own initials>
 docker image ls
 
-docker push belfast/hello-belfast-image:<your own initials>
+docker push popuplabus/hello-portsmouth-image:<your own initials>
 ```
 
-Go to [Docker Hub](https://hub.docker.com/r/belfast/hello-belfast-image/). View the Tags.
+Go to [Docker Hub](https://hub.docker.com/r/popuplabus/hello-portsmouth-image/). View the Tags.
 
 Run in these commands in your second instance:
 
@@ -52,7 +52,7 @@ Run in these commands in your second instance:
 docker image ls
 docker container ls -a
 
-docker container run --name my-hello-belfast belfast/hello-belfast-image:<your own initials> 
+docker container run --name my-hello-portsmouth popuplabus/hello-portsmouth-image:<your own initials> 
 
 docker image ls
 docker container ls -a

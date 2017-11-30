@@ -4,6 +4,6 @@ COPY src /usr/src/myapp
 
 WORKDIR /usr/src/myapp
 
-RUN javac HelloBelfast.java
+RUN javac HelloPortsmouth.java
 
-CMD ["java", "HelloBelfast"]
+CMD ["java", "HelloPortsmouth"]
